@@ -118,13 +118,25 @@ main {
 
 
 
+.body {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #B2B2FF;
+    height: 88vh;
+}
 
 .reg-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    margin-top: 9vh;
+    width: 40vw;
     gap: 1vw;
+    background-color: white;
 }
 
 .reg-form input {
@@ -135,4 +147,14 @@ main {
 
 .reg-form input::placeholder {
     font-size: 1.3em;
+}
+
+#submit-btn {
+    width: 400px;
+    height: 40px;
+    background-color: #7575FF;
+    border: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
 }
