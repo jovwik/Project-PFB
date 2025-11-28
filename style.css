@@ -119,6 +119,18 @@ main {
 
 .reg-form {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1vw;
+}
+
+.reg-form input {
+    padding: 10px;
+    height: 50px;
+    width: 360px;
+}
+
+.reg-form input::placeholder {
+    font-size: 1.3em;
 }

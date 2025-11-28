@@ -3,42 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restoran Website</title>
+    <title>Sign Up to BiteGo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="left-links">
+            <img src="https://husadakaryajaya.ac.id/wp-content/uploads/2024/03/placeholder-45.png" alt="" id="bitego-logo">
+            <a href="home.html">Home</a>
+            <a href="cart.html">Cart</a>
+        </div>
+        <img src="https://husadakaryajaya.ac.id/wp-content/uploads/2024/03/placeholder-45.png" alt="" id="search-symbol">
+    </header>
     <div class="registration">
         <h1>Register Account</h1>
-        <div class="reg-form">
-            <form action="index.php" method="post">
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" placeholder="Your name">
-                </div>
-                <div>
-                    <label for="email">E-mail:</label>
-                    <input type="text" name="email" id="email" placeholder="example@gmail.com">
-                </div>
-                <div>
-                    <label for="password">Create password:</label>
-                    <input type="password" name="password" id="password">
-                </div>
-                <div>
-                    <label for="conPassword">Confirm Password:</label>
-                    <input type="password" name="conPassword" id="conPassword">
-                </div>
-                <div>
-                    <label for="dob">Date of Birth: </label>
-                    <input type="date" name="dob" id="dob">
-                </div>
-                <div>
-                    <label for="gender">Gender: </label>
-                    <input type="radio" name="gender" id="gender-m">Male
-                    <input type="radio" name="gender" id="gender-f">Female
-                </div>
-                <button type="submit">Register</button>
-            </form>
-        </div>
+        <form action="index.php" method="post" class="reg-form">
+            <input type="text" name="username" id="username" placeholder="Username">
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="text" name="email" id="email" placeholder="E-mail">
+            <input type="tel" name="phoneNum" id="phoneNum" placeholder="Phone Number">
+            <input type="password" name="password" id="password" placeholder="Create Password">
+            <input type="password" name="conPassword" id="conPassword" placeholder="Confirm Password">
+            <button type="submit">Sign Up</button>
+            <p>Already have an account? <a href="login.html">Sign In</a></p>
+        </form>
 
 
 
